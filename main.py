@@ -42,15 +42,19 @@ def randomized_quick_sort(arr, low, high):
 # -----------------------------------------------------
 def test_me_insertion_sort():
     arr = [5, 2, 4, 6, 1, 3]
+    print("Original array:", [5, 2, 4, 6, 1, 3])
     insertion_sort(arr)
+    print("Sorted array:", arr)  # 👈 added this line
     assert arr == sorted([5, 2, 4, 6, 1, 3])
-    print("Insertion Sort test passed!")
+    print("Insertion Sort test passed!\n")
 
 def test_me_randomized_quick_sort():
     arr = [10, 7, 8, 9, 1, 5]
+    print("Original array:", [10, 7, 8, 9, 1, 5])
     randomized_quick_sort(arr, 0, len(arr) - 1)
+    print("Sorted array:", arr)  # 👈 added this line
     assert arr == sorted([10, 7, 8, 9, 1, 5])
-    print("Randomized Quick Sort test passed!")
+    print("Randomized Quick Sort test passed!\n")
 
 # -----------------------------------------------------
 # Main function for runtime testing
