@@ -101,4 +101,6 @@ def main():
 # Run the tests and main
 # -----------------------------------------------------
 if __name__ == "__main__":
+    test_me_insertion_sort()
+    test_me_randomized_quick_sort()
     main()
